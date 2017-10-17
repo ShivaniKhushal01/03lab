@@ -18,10 +18,12 @@
   let myName = document.getElementById("my-name"); 
   let userName = document.getElementById("user-name"); 
   let getName = document.getElementById("get-name");
+  let getHeader = document.getElementById("myheader");
   
   // changes the 'innerHTML' (text) of the element
   function PerformGreeting() {
     myName.innerHTML = userName.value;
+	getHeader.innerHTML = userName.value;
      /*
     Without setting the variables first, the above line would be really long:
       document.getElementById("my-name").innerHTML = document.getElementById("user-name").value;
